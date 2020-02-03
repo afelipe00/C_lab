@@ -15,21 +15,21 @@ struct pelicula
 {
 	unsigned char nombre[10];
 	struct boleta asientos[36];
-	unsigned char mat[6][6] = { {' ',' ',' ',' ',' ',' '},
+	unsigned char mat[6][6]; /*= { {' ',' ',' ',' ',' ',' '},
 								{' ',' ',' ',' ',' ',' '},
 								{' ',' ',' ',' ',' ',' '},
 								{' ',' ',' ',' ',' ',' '},
 								{' ',' ',' ',' ',' ',' '},
-								{' ',' ',' ',' ',' ',' '} };
+								{' ',' ',' ',' ',' ',' '} };*/
 
 };
 
 struct cinema
 {
-	unsigned char nombre[10] = { 'c','i','n','e','m','a','p','l','a','y' };
-	struct pelicula movies[3] = { {{'e','l','p','a','y','a','s','o','i','t'},{0}},
+	unsigned char nombre[10];  /*={ 'c','i','n','e','m','a','p','l','a','y' };*/
+	struct pelicula movies[3];/* = { {{'e','l','p','a','y','a','s','o','i','t'},{0}},
 								  {{'e','l','p','a','y','a','s','o','o','t'},{0}},
-								  {{'e','l','p','a','y','a','s','o','u','t'},{0}} };
+								  {{'e','l','p','a','y','a','s','o','u','t'},{0}} };*/
 };
 
 void dibujo(unsigned char dib[][6]) {
@@ -281,7 +281,6 @@ void c_co() {
 
 }
 
-
+/*
 int main(void) {
-	c_co();
-}
+}*/

@@ -141,6 +141,9 @@
     <ClCompile Include="Cine.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
     </ClCompile>
+    <ClCompile Include="diccionario.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
     <ClCompile Include="Maquina_monedas.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
     </ClCompile>
