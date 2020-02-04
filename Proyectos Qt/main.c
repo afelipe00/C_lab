@@ -211,5 +211,9 @@ void menu_d() {
 }
 
 int main() {
+    char datos[2000];
+    FILE *fp= fopen("prueba.csv","w+");
+
+    fread(datos,)
     menu_d();
 }
