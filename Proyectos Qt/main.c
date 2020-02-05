@@ -173,7 +173,16 @@ void agregar(struct palabra dic[],unsigned char word[]) {
         }
     } while (opc != '0');
 }
+void load_file(){
+    char datos[2000];
+    int tam_fp;
+    FILE *fp= fopen("prueba.csv","w+");
 
+    fseek(fp,0,SEEK_END);
+    tam_fp = ftell(fp);
+    rewind(fp);
+    fread(datos,tam_fp,tam_fp,fp);
+}
 void menu_d() {
     struct palabra diccionario[100];//declaro la estructura del diccionario
     unsigned char word[30];//vector donde se almacena la palabra escrita
@@ -211,9 +220,6 @@ void menu_d() {
 }
 
 int main() {
-    char datos[2000];
-    FILE *fp= fopen("prueba.csv","w+");
-
-    fread(datos,)
+    load_file();
     menu_d();
 }
