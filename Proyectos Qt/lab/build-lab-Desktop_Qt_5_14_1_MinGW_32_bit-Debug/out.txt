@@ -1,0 +1,193 @@
+Testing de tamaño superios a los 128kbytes
+
+I.	Nombre del proyecto
+SMART SHIFTS
+II.	Descripción de la idea de negocio.
+SMART SHITFS es una empresa basada en las tecnologías 4.0 actualmente emergentes que busca aprovechar el afán de la industria por capturar información y mejorar la experiencia del usuario. Con enfoque en restaurantes y franquicias de alimentos. SMART SHIFTS busca reemplazar los localizadores o Turneros que las cadenas de restaurantes dan a los consumidores mientras esperan a que su orden esté lista, la idea consiste en entregar un dispositivo del mismo tamaño, pero con una pantalla táctil que permita la interacción del usuario con el elemento electrónico, en dicho dispositivo se pueden cargar juegos, encuestas y publicidad. En promedio, una orden tarda de 5 a 20 minutos en estar lista, tiempo suficiente para que el consumidor responda un formulario o encuesta que permita al establecimiento conocer más a sus clientes, además de poder incluir publicidad de otras marcas relacionadas los que le puede generar nuevos ingresos a los restaurantes que opten por este producto. De igual forma, se pueden cargar juegos que hagan la espera más amena y a su vez aumentar los niveles de satisfacción de los clientes, generando un distractor interactivo por medio de la Gamificación.
+Es una idea de Innovación donde se toma un producto existente y por medio de las tecnologías 4.0 se crea un producto con mejores características para el usuario final y que al mismo tiempo beneficie al vendedor, este dispositivo electrónico cumple con la característica SMART: es un producto específico, medible, alcanzable, realista y se pueda desarrollar en un tiempo específico, es un proyecto pensado para realizar en 6 meses.
+
+
+
+
+
+III.	Antecedentes y justificación del Proyecto.
+Para el desarrollo de la idea de negocio se realizó el primer paso de la metodología design thinking dónde se busca empatizar con las personas y lograr conocer 4 puntos importantes: el usuario final ¿Qué ve? ¿Qué siente? ¿Qué piensa? y ¿Qué hace? al momento de comprar en un restaurante de cadena y de lo cual se obtuvo los siguientes resultados:
+?	Qué piensan: Las personas piensan en el tiempo básicamente porque tienen hambre y al no estar distraídos con ninguna actividad la espera se hace más larga.
+?	Qué ven: ven que pueden emplear su tiempo en otras cosas. 
+?	Qué siente: aburrimiento, frustración.
+?	Qué hacen: Las personas miran su celular, escuchan música, hablan por teléfono, hablan con sus acompañantes (cuando los hay) o por el contrario no hace nada más que esperar.
+Según los datos recopilados podemos notar que los niveles de satisfacción de los clientes no son muy altos por lo que con este dispositivo y por medio de la Gamificación se busca aumentar estos estándares y crear una mejor experiencia para los usuarios. Actualmente los turneros cuentan con un sistema de comunicación con el dispositivo central (ubicado en el establecimiento) mediante señales infrarrojas. Al oprimir un switch accionador correspondiente al turnero este vibra para avisar al consumidor que su pedido está listo, la necesidad de entretener al cliente y hacer más amena su espera se alinea con la estrategia de negocio de muchas cadenas de restaurantes al perseguir el mismo objetivo, llegar a más clientes y mejorar su experiencia.
+
+IV.	Descripción de la industria, el mercado y el entorno del Negocio.
+El mercado objetivo de este producto son las cadenas de restaurantes que actualmente utilizan turneros para notificar al consumidor cuando su orden está lista. El producto es totalmente parametrizable de acuerdo con la estrategia y los objetivos de cada restaurante.
+
+V.	Descripción de la oportunidad que se da en el mercado y la propuesta de valor.
+La propuesta de valor de la empresa va mas allá del producto entregado ya que en realidad se estará ofreciendo un servicio que por medio de la utilización de las nuevas tecnologías permite a los restaurantes conocer con más detalles los niveles de satisfacción de los clientes además de otras estadísticas que le permitan al restaurante mejorar su experiencia con los usuarios.
+
+Juanita Alejandra Ballen Fajardo
+Julieth Xiomara Montaño Rodríguez
+Andrés Felipe Díaz Rodríguez
+Ingeniera Electrónica 
+Universidad Sergio Arboleda
+viernes 07 de febrero de 2020
+
+PROPUESTA PLAN DE NEGOCIO 
+I.	Nombre del proyecto
+SenseTec
+
+II.	Descripción de la idea de negocio.
+SenseTec es una empresa que emplea las tecnologías 4.0 y por medio del IOT busca suplir una necesidad presente en los actuales esquemas de seguridad empresariales, somo sabemos hoy en día la automatización inteligente de tareas recurrentes y repetitivas es mas accesible a las empresas y startups debido a los avances tecnológicos, con esto las empresas están buscando automatizar los procesos de producción, atención al cliente y demás tareas internas en la empresa. El producto inicial con el cual SenseTec quiere entrar en el mercado es con una SmartBox que por medio de sistemas sensoriales y controladores realice: detección automática e inteligente de incendios; esto incluye medición constante de humedad y temperatura, regulación automática de la temperatura en las oficinas, detección de intrusión, conexión inteligente de botón de pánico, activación de alarmas inteligentes y comunicación son servidores y servicios de emergencia local. 
+
+III.	Antecedentes y justificación del Proyecto.
+Actualmente a nivel nacional no existe un sistema que cumpla con las necesidades y la solución presentada por SenseTec: mediciones automatizadas e inteligentes que permitan a los tomadores de decisión en la empresas acceder a estadística e información de estado en su sucursales, además del respaldo y seguridad que se ofrece al tener todas estas labores automatizadas; como el respaldo automático de servidores en caso de incendios. 
+Actualmente existen algunos sistemas automatizados pero que no ofrecen los servicios planteados por SenseTec; algunos fueron presentado anteriormente. Sabemos que con el crecimiento tecnológico y la utilización de servidores locales como en la nube SenseTec cubre estas necesidades emergentes de manera inteligente y automatizada.
+
+
+
+IV.	Descripción de la industria, el mercado y el entorno del Negocio.
+El mercado objetivo son cualquier tipo de empresas que requieran tener sistemas de seguridad inteligente, esto incluye: empresas industriales, financieras, educativas, etc.  El servicio ofrecido se puede acomodar perfectamente a las características te cualquier tipo de empresa.
+
+V.	Descripción de la oportunidad que se da en el mercado y la propuesta de valor.
+
+La apuesta actual en Colombia por los servicios de IOT y automatización (economía naranja) ah generado un creciente mercado y aumento de la necesidad de este tipo de empresas lo que genero un ambiente perfecto para que SenseTec entre en el mercado, la propuesta valor ofrecida por la empresa es ofrecer absoluta fiabilidad y seguridad a sus empresas de manera inteligente y automatizada, con esto no solo se incluyen productos como la Smartbox (que ayuda con la seguridad de las sucursales y bodegas), si no que también se pueden ofrecer servicios de desarrollo de software y soluciones inteligentes que se acomoden a cada empresa.
+
+Corrected QT Variability in Serial Electrocardiograms in Long QT Syndrome: The Importance of the Maximum Corrected QT for Risk Stratification
+
+Ilan Goldenberg, Jehu Mathew, Arthur J. Moss, Scott McNitt, Derick R. Peterson, Wojciech Zareba, Jesaia Benhorin, Li Zhang, G. Michael Vincent, Mark L. Andrews, Jennifer L. Robinson, Brian Morray
+
+The incremental prognostic information provided by multiple corrected QT (QTc) measurements on serial electrocardiograms (ECGs) recorded before age 10 years was assessed in 375 long QT syndrome (LQTS) patients who were followed during adolescence. The QTc measures on serial ECGs demonstrated a considerable variability during follow-up. The maximum QTc interval recorded before age 10 years was shown to be the strongest predictor of cardiac events during adolescence. Furthermore, no significant association between the baseline QTc value and the risk of subsequent cardiac events remained after adjustment for the maximum QTc value. We suggest that risk stratification in LQTS patients should include follow-up ECG data.
+
+Abstract
+Objectives We evaluated the incremental prognostic information provided by multiple corrected QT (QTc) measurements on serial electrocardiograms (ECGs) in patients with the inherited long QT syndrome (LQTS).
+
+Background A baseline QTc of =500 ms has been shown to be associated with increased risk of cardiac events among LQTS patients. However, the value of QTc measurements on follow-up ECGs in risk assessment has not been determined.
+
+Methods The risk of a first LQTS-related cardiac event during adolescence was assessed in 375 patients enrolled in the International LQTS Registry for whom serial follow-up ECGs were recorded before age 10.
+
+Results The mean ± SD difference between the minimum and maximum QTc values on serial ECGs recorded in study patients was 47 ± 40 ms. The maximum QTc interval recorded before age 10 was the strongest predictor of cardiac events during adolescence (adjusted hazard ratio [HR] = 2.74; p < 0.001). Other follow-up QTc measures, including the baseline, the mean, and the most recent QTc interval recorded before age 10, were less significant risk factors. After adjusting for the maximum QTc value during follow-up, no significant association remained between the baseline QTc value and the risk of subsequent cardiac events (HR = 1.04; p = 0.91).
+
+Conclusions In LQTS patients, there is a considerable variability in QTc measures in serial follow-up ECGs. The maximum QTc interval provides incremental prognostic information beyond the baseline measurement. We suggest that risk stratification in LQTS patients should include follow-up ECG data.
+
+Abstract
+The present disclosure includes a system and method of detecting LQTS in a patient by comparing a collected set of ECG data from the patient to a plurality of databases of collected ECG data. The plurality of databases will include a database containing previous ECGs from the patient, a known acquired LQTS characteristics database, and a known genetic LQTS characteristics database. Comparing the patients ECG to these databases will facilitate the detection of such occurrences as changes in QT interval from success of ECGs, changes in T-wave morphology, changes in U-wave morphology and can match known genetic patterns of LQTS. The system and method is sensitive to patient gender and ethnicity, as these factors have been shown to effect LQTS, and is furthermore capable of matching a QT duration to a database of drug effects. The system and method is also easily integrated into current ECG management systems and storage devices.
+
+Abstract
+The ability of QT interval dispersion to predict the occurrence of ventricular fibrillation (VF) after acute myocardial infarction treated with thrombolytic therapy is controversial. Continuous 12-lead electrocardiographic (ECG) monitoring for 48 hours or longer provides an opportunity to detect transient changes of QT dispersion and correlate such changes with the clinical outcome. In 543 consecutive patients enrolled in the TAMI-9 and GUSTO I studies, serial changes of the QT dispersion were analyzed in an attempt to predict the occurrence of VF with a system that monitored continuously the 12-lead ECG and stored it at least every 20 minutes. Measurements of QT dispersion were made at a median time of 2.37 hours after the onset of chest pain and at 24- and 48-hour intervals. A total of 43 patients experienced VF during the acute phase of myocardial infarction; of these patients, 33 (77%) had anterior infarcts. However, despite the higher preponderance of anterior myocardial infarcts in the VF group, patients with anterior infarcts did not have longer QT dispersion than those with other infarct locations. Similarly, no significant differences in the QT dispersion were observed at any time between the group with VF and that without. Women had increased QT dispersion in the initial and 24-hour ECG as compared with men (P = .005). However, this normalized at the 48-hour measurements. Despite this difference, there was no higher incidence of VF in female patients. In conclusion, the data suggest that QT dispersion alone is not sufficient to explain the occurrence of VF in the acute phase of myocardial infarction after thrombolytic therapy.
+
+File transferring under X-MODEM protocol based on embedded system
+LI Shuai,NIE Hui-rao,MA Hao,ZHANG Wen-zeng(Department of Mechanical Engineering,Tsinghua University,Beijing 100084,China)  
+In order to archive file transferring under X-MODEM protocol based on embedded system and archive the function of sending Multimedia Messaging Service(MMS) under embedded system environment,this article proposed a method which enables embedded systems to send files especially pictures under X-MODEM protocol and implemented a program that fulfilled the function.This article also made an exploration about the time needed by the embedded system to send files and gave a reasonable explanation to time delay during the file transferring
+
+ABSTRACT
+
+The textile industry is responsible for the generation of highly colored effluents, which need adequate treatment. Thus, the advanced oxidative processes (AOP) have been used to degrade the dye and convert organic matter. In the present study, the degradation of the reactive blue dyes BF-5G and red remazol RB 133% were evaluated through Fenton and photo-Fenton processes (solar and sunlight). To determine the best working condition, the pH, peroxide concentration, iron concentration and time variables were evaluated by performing a kinetic study in this condition. From a preliminary study, it was verified that the Fenton and photo-Fenton processes, using different radiations, presented similar results, reaching a degradation of more than 98% for each dye. The factorial design indicated better results for a concentration of H2O2 of 10 mg · L-1, iron concentration of 5 mg · L-1 and time of 15 min, obtaining degradation above 88% for the studied dyes. A good kinetic adjustment was verified for a pseudo first order kinetic model (R2 = 0.9921 and 0.9867 for blue and red dyes, respectively). Ultimately, the study of chemical oxygen demand indicated a conversion of 75.98% for the Fenton process, 86.63% photo-Fenton solar and 87.02% photo-Fenton sunlight.
+
+
+Abstract:
+Designing and tuning a proportional-integral-derivative (PID) controller appears to be conceptually intuitive, but can be hard in practice, if multiple (and often conflicting) objectives such as short transient and high stability are to be achieved. Usually, initial designs obtained by all means need to be adjusted repeatedly through computer simulations until the closed-loop system performs or compromises as desired. This stimulates the development of "intelligent" tools that can assist engineers to achieve the best overall PID control for the entire operating envelope. This development has further led to the incorporation of some advanced tuning algorithms into PID hardware modules. Corresponding to these developments, this paper presents a modern overview of functionalities and tuning methods in patents, software packages and commercial hardware modules. It is seen that many PID variants have been developed in order to improve transient performance, but standardising and modularising PID control are desired, although challenging. The inclusion of system identification and "intelligent" techniques in software based PID systems helps automate the entire design and tuning process to a useful degree. This should also assist future development of "plug-and-play" PID controllers that are widely applicable and can be set up easily and operate optimally for enhanced productivity, improved quality and reduced maintenance requirements.
+
+
+Abstract:
+Active disturbance rejection control (ADRC) can be summarized as follows: it inherits from proportional-integral-derivative (PID) the quality that makes it such a success: the error driven, rather than model-based, control law; it takes from modern control theory its best offering: the state observer; it embraces the power of nonlinear feedback and puts it to full use; it is a useful digital control technology developed out of an experimental platform rooted in computer simulations. ADRC is made possible only when control is taken as an experimental science, instead of a mathematical one. It is motivated by the ever increasing demands from industry that requires the control technology to move beyond PID, which has dominated the practice for over 80 years. Specifically, there are four areas of weakness in PID that we strive to address: 1) the error computation; 2) noise degradation in the derivative control; 3) oversimplification and the loss of performance in the control law in the form of a linear weighted sum; and 4) complications brought by the integral control. Correspondingly, we propose four distinct measures: 1) a simple differential equation as a transient trajectory generator; 2) a noise-tolerant tracking differentiator; 3) the nonlinear control laws; and 4) the concept and method of total disturbance estimation and rejection. Together, they form a new set of tools and a new way of control design. Times and again in experiments and on factory floors, ADRC proves to be a capable replacement of PID with unmistakable advantage in performance and practicality, providing solutions to pressing engineering problems of today. With the new outlook and possibilities that ADRC represents, we further believe that control engineering may very well break the hold of classical PID and enter a new era, an era that brings back the spirit of innovations.
+
+Abstract
+The Ziegler–Nichols step response method is based on the idea of tuning controllers based on simple features of the step response. In this paper this idea is investigated from the point of view of robust loop shaping. The results are: insight into the properties of PI and PID control and simple tuning rules that give robust performance for processes with essentially monotone step responses.
+
+
+
+Testing de tamaño superios a los 128kbytes
+
+I.	Nombre del proyecto
+SMART SHIFTS
+II.	Descripción de la idea de negocio.
+SMART SHITFS es una empresa basada en las tecnologías 4.0 actualmente emergentes que busca aprovechar el afán de la industria por capturar información y mejorar la experiencia del usuario. Con enfoque en restaurantes y franquicias de alimentos. SMART SHIFTS busca reemplazar los localizadores o Turneros que las cadenas de restaurantes dan a los consumidores mientras esperan a que su orden esté lista, la idea consiste en entregar un dispositivo del mismo tamaño, pero con una pantalla táctil que permita la interacción del usuario con el elemento electrónico, en dicho dispositivo se pueden cargar juegos, encuestas y publicidad. En promedio, una orden tarda de 5 a 20 minutos en estar lista, tiempo suficiente para que el consumidor responda un formulario o encuesta que permita al establecimiento conocer más a sus clientes, además de poder incluir publicidad de otras marcas relacionadas los que le puede generar nuevos ingresos a los restaurantes que opten por este producto. De igual forma, se pueden cargar juegos que hagan la espera más amena y a su vez aumentar los niveles de satisfacción de los clientes, generando un distractor interactivo por medio de la Gamificación.
+Es una idea de Innovación donde se toma un producto existente y por medio de las tecnologías 4.0 se crea un producto con mejores características para el usuario final y que al mismo tiempo beneficie al vendedor, este dispositivo electrónico cumple con la característica SMART: es un producto específico, medible, alcanzable, realista y se pueda desarrollar en un tiempo específico, es un proyecto pensado para realizar en 6 meses.
+
+
+
+
+
+III.	Antecedentes y justificación del Proyecto.
+Para el desarrollo de la idea de negocio se realizó el primer paso de la metodología design thinking dónde se busca empatizar con las personas y lograr conocer 4 puntos importantes: el usuario final ¿Qué ve? ¿Qué siente? ¿Qué piensa? y ¿Qué hace? al momento de comprar en un restaurante de cadena y de lo cual se obtuvo los siguientes resultados:
+?	Qué piensan: Las personas piensan en el tiempo básicamente porque tienen hambre y al no estar distraídos con ninguna actividad la espera se hace más larga.
+?	Qué ven: ven que pueden emplear su tiempo en otras cosas. 
+?	Qué siente: aburrimiento, frustración.
+?	Qué hacen: Las personas miran su celular, escuchan música, hablan por teléfono, hablan con sus acompañantes (cuando los hay) o por el contrario no hace nada más que esperar.
+Según los datos recopilados podemos notar que los niveles de satisfacción de los clientes no son muy altos por lo que con este dispositivo y por medio de la Gamificación se busca aumentar estos estándares y crear una mejor experiencia para los usuarios. Actualmente los turneros cuentan con un sistema de comunicación con el dispositivo central (ubicado en el establecimiento) mediante señales infrarrojas. Al oprimir un switch accionador correspondiente al turnero este vibra para avisar al consumidor que su pedido está listo, la necesidad de entretener al cliente y hacer más amena su espera se alinea con la estrategia de negocio de muchas cadenas de restaurantes al perseguir el mismo objetivo, llegar a más clientes y mejorar su experiencia.
+
+IV.	Descripción de la industria, el mercado y el entorno del Negocio.
+El mercado objetivo de este producto son las cadenas de restaurantes que actualmente utilizan turneros para notificar al consumidor cuando su orden está lista. El producto es totalmente parametrizable de acuerdo con la estrategia y los objetivos de cada restaurante.
+
+V.	Descripción de la oportunidad que se da en el mercado y la propuesta de valor.
+La propuesta de valor de la empresa va mas allá del producto entregado ya que en realidad se estará ofreciendo un servicio que por medio de la utilización de las nuevas tecnologías permite a los restaurantes conocer con más detalles los niveles de satisfacción de los clientes además de otras estadísticas que le permitan al restaurante mejorar su experiencia con los usuarios.
+
+Juanita Alejandra Ballen Fajardo
+Julieth Xiomara Montaño Rodríguez
+Andrés Felipe Díaz Rodríguez
+Ingeniera Electrónica 
+Universidad Sergio Arboleda
+viernes 07 de febrero de 2020
+
+PROPUESTA PLAN DE NEGOCIO 
+I.	Nombre del proyecto
+SenseTec
+
+II.	Descripción de la idea de negocio.
+SenseTec es una empresa que emplea las tecnologías 4.0 y por medio del IOT busca suplir una necesidad presente en los actuales esquemas de seguridad empresariales, somo sabemos hoy en día la automatización inteligente de tareas recurrentes y repetitivas es mas accesible a las empresas y startups debido a los avances tecnológicos, con esto las empresas están buscando automatizar los procesos de producción, atención al cliente y demás tareas internas en la empresa. El producto inicial con el cual SenseTec quiere entrar en el mercado es con una SmartBox que por medio de sistemas sensoriales y controladores realice: detección automática e inteligente de incendios; esto incluye medición constante de humedad y temperatura, regulación automática de la temperatura en las oficinas, detección de intrusión, conexión inteligente de botón de pánico, activación de alarmas inteligentes y comunicación son servidores y servicios de emergencia local. 
+
+III.	Antecedentes y justificación del Proyecto.
+Actualmente a nivel nacional no existe un sistema que cumpla con las necesidades y la solución presentada por SenseTec: mediciones automatizadas e inteligentes que permitan a los tomadores de decisión en la empresas acceder a estadística e información de estado en su sucursales, además del respaldo y seguridad que se ofrece al tener todas estas labores automatizadas; como el respaldo automático de servidores en caso de incendios. 
+Actualmente existen algunos sistemas automatizados pero que no ofrecen los servicios planteados por SenseTec; algunos fueron presentado anteriormente. Sabemos que con el crecimiento tecnológico y la utilización de servidores locales como en la nube SenseTec cubre estas necesidades emergentes de manera inteligente y automatizada.
+
+
+
+IV.	Descripción de la industria, el mercado y el entorno del Negocio.
+El mercado objetivo son cualquier tipo de empresas que requieran tener sistemas de seguridad inteligente, esto incluye: empresas industriales, financieras, educativas, etc.  El servicio ofrecido se puede acomodar perfectamente a las características te cualquier tipo de empresa.
+
+V.	Descripción de la oportunidad que se da en el mercado y la propuesta de valor.
+
+La apuesta actual en Colombia por los servicios de IOT y automatización (economía naranja) ah generado un creciente mercado y aumento de la necesidad de este tipo de empresas lo que genero un ambiente perfecto para que SenseTec entre en el mercado, la propuesta valor ofrecida por la empresa es ofrecer absoluta fiabilidad y seguridad a sus empresas de manera inteligente y automatizada, con esto no solo se incluyen productos como la Smartbox (que ayuda con la seguridad de las sucursales y bodegas), si no que también se pueden ofrecer servicios de desarrollo de software y soluciones inteligentes que se acomoden a cada empresa.
+
+Corrected QT Variability in Serial Electrocardiograms in Long QT Syndrome: The Importance of the Maximum Corrected QT for Risk Stratification
+
+Ilan Goldenberg, Jehu Mathew, Arthur J. Moss, Scott McNitt, Derick R. Peterson, Wojciech Zareba, Jesaia Benhorin, Li Zhang, G. Michael Vincent, Mark L. Andrews, Jennifer L. Robinson, Brian Morray
+
+The incremental prognostic information provided by multiple corrected QT (QTc) measurements on serial electrocardiograms (ECGs) recorded before age 10 years was assessed in 375 long QT syndrome (LQTS) patients who were followed during adolescence. The QTc measures on serial ECGs demonstrated a considerable variability during follow-up. The maximum QTc interval recorded before age 10 years was shown to be the strongest predictor of cardiac events during adolescence. Furthermore, no significant association between the baseline QTc value and the risk of subsequent cardiac events remained after adjustment for the maximum QTc value. We suggest that risk stratification in LQTS patients should include follow-up ECG data.
+
+Abstract
+Objectives We evaluated the incremental prognostic information provided by multiple corrected QT (QTc) measurements on serial electrocardiograms (ECGs) in patients with the inherited long QT syndrome (LQTS).
+
+Background A baseline QTc of =500 ms has been shown to be associated with increased risk of cardiac events among LQTS patients. However, the value of QTc measurements on follow-up ECGs in risk assessment has not been determined.
+
+Methods The risk of a first LQTS-related cardiac event during adolescence was assessed in 375 patients enrolled in the International LQTS Registry for whom serial follow-up ECGs were recorded before age 10.
+
+Results The mean ± SD difference between the minimum and maximum QTc values on serial ECGs recorded in study patients was 47 ± 40 ms. The maximum QTc interval recorded before age 10 was the strongest predictor of cardiac events during adolescence (adjusted hazard ratio [HR] = 2.74; p < 0.001). Other follow-up QTc measures, including the baseline, the mean, and the most recent QTc interval recorded before age 10, were less significant risk factors. After adjusting for the maximum QTc value during follow-up, no significant association remained between the baseline QTc value and the risk of subsequent cardiac events (HR = 1.04; p = 0.91).
+
+Conclusions In LQTS patients, there is a considerable variability in QTc measures in serial follow-up ECGs. The maximum QTc interval provides incremental prognostic information beyond the baseline measurement. We suggest that risk stratification in LQTS patients should include follow-up ECG data.
+
+Abstract
+The present disclosure includes a system and method of detecting LQTS in a patient by comparing a collected set of ECG data from the patient to a plurality of databases of collected ECG data. The plurality of databases will include a database containing previous ECGs from the patient, a known acquired LQTS characteristics database, and a known genetic LQTS characteristics database. Comparing the patients ECG to these databases will facilitate the detection of such occurrences as changes in QT interval from success of ECGs, changes in T-wave morphology, changes in U-wave morphology and can match known genetic patterns of LQTS. The system and method is sensitive to patient gender and ethnicity, as these factors have been shown to effect LQTS, and is furthermore capable of matching a QT duration to a database of drug effects. The system and method is also easily integrated into current ECG management systems and storage devices.
+
+Abstract
+The ability of QT interval dispersion to predict the occurrence of ventricular fibrillation (VF) after acute myocardial infarction treated with thrombolytic therapy is controversial. Continuous 12-lead electrocardiographic (ECG) monitoring for 48 hours or longer provides an opportunity to detect transient changes of QT dispersion and correlate such changes with the clinical outcome. In 543 consecutive patients enrolled in the TAMI-9 and GUSTO I studies, serial changes of the QT dispersion were analyzed in an attempt to predict the occurrence of VF with a system that monitored continuously the 12-lead ECG and stored it at least every 20 minutes. Measurements of QT dispersion were made at a median time of 2.37 hours after the onset of chest pain and at 24- and 48-hour intervals. A total of 43 patients experienced VF during the acute phase of myocardial infarction; of these patients, 33 (77%) had anterior infarcts. However, despite the higher preponderance of anterior myocardial infarcts in the VF group, patients with anterior infarcts did not have longer QT dispersion than those with other infarct locations. Similarly, no significant differences in the QT dispersion were observed at any time between the group with VF and that without. Women had increased QT dispersion in the initial and 24-hour ECG as compared with men (P = .005). However, this normalized at the 48-hour measurements. Despite this difference, there was no higher incidence of VF in female patients. In conclusion, the data suggest that QT dispersion alone is not sufficient to explain the occurrence of VF in the acute phase of myocardial infarction after thrombolytic therapy.
+
+File transferring under X-MODEM protocol based on embedded system
+LI Shuai,NIE Hui-rao,MA Hao,ZHANG Wen-zeng(Department of Mechanical Engineering,Tsinghua University,Beijing 100084,China)  
+In order to archive file transferring under X-MODEM protocol based on embedded system and archive the function of sending Multimedia Messaging Service(MMS) under embedded system environment,this article proposed a method which enables embedded systems to send files especially pictures under X-MODEM protocol and implemented a program that fulfilled the function.This article also made an exploration about the time needed by the embedded system to send files and gave a reasonable explanation to time delay during the file transferring
+
+ABSTRACT
+
+The textile industry is responsible for the generation of highly colored effluents, which need adequate treatment. Thus, the advanced oxidative processes (AOP) have been used to degrade the dye and convert organic matter. In the present study, the degradation of the reactive blue dyes BF-5G and red remazol RB 133% were evaluated through Fenton and photo-Fenton processes (solar and sunlight). To determine the best working condition, the pH, peroxide concentration, iron concentration and time variables were evaluated by performing a kinetic study in this condition. From a preliminary study, it was verified that the Fenton and photo-Fenton processes, using different radiations, presented similar results, reaching a degradation of more than 98% for each dye. The factorial design indicated better results for a concentration of H2O2 of 10 mg · L-1, iron concentration of 5 mg · L-1 and time of 15 min, obtaining degradation above 88% for the studied dyes. A good kinetic adjustment was verified for a pseudo first order kinetic model (R2 = 0.9921 and 0.9867 for blue and red dyes, respectively). Ultimately, the study of chemical oxygen demand indicated a conversion of 75.98% for the Fenton process, 86.63% photo-Fenton solar and 87.02% photo-Fenton sunlight.
+
+
+Abstract:
+Designing and tuning a proportional-integral-derivative (PID) controller appears to be conceptually intuitive, but can be hard in practice, if multiple (and often conflicting) objectives such as short transient and high stability are to be achieved. Usually, initial designs obtained by all means need to be adjusted repeatedly through computer simulations until the closed-loop system performs or compromises as desired. This stimulates the development of "intelligent" tools that can assist engineers to achieve the best overall PID control for the entire operating envelope. This development has further led to the incorporation of some advanced tuning algorithms into PID hardware modules. Corresponding to these developments, this paper presents a modern overview of functionalities and tuning methods in patents, software packages and commercial hardware modules. It is seen that many PID variants have been developed in order to improve transient performance, but standardising and modularising PID control are desired, although challenging. The inclusion of system identification and "intelligent" techniques in software based PID systems helps automate the entire design and tuning process to a useful degree. This should also assist future development of "plug-and-play" PID controllers that are widely applicable and can be set up easily and operate optimally for enhanced productivity, improved quality and reduced maintenance requirements.
+
+
+Abstract:
+Active disturbance rejection control (ADRC) can be summarized as follows: it inherits from proportional-integral-derivative (PID) the quality that makes it such a success: the error driven, rather than model-based, control law; it takes from modern control theory its best offering: the state observer; it embraces the power of nonlinear feedback and puts it to full use; it is a useful digital control technology developed out of an experimental platform rooted in computer simulations. ADRC is made possible only when control is taken as an experimental science, instead of a mathematical one. It is motivated by the ever increasing demands from industry that requires the control technology to move beyond PID, which has dominated the practice for over 80 years. Specifically, there are four areas of weakness in PID that we strive to address: 1) the error computation; 2) noise degradation in the derivative control; 3) oversimplification and the loss of performance in the control law in the form of a linear weighted sum; and 4) complications brought by the integral control. Correspondingly, we propose four distinct measures: 1) a simple differential equation as a transient trajectory generator; 2) a noise-tolerant tracking differentiator; 3) the nonlinear control laws; and 4) the concept and method of total disturbance estimation and rejection. Together, they form a new set of tools and a new way of control design. Times and again in experiments and on factory floors, ADRC proves to be a capable replacement of PID with unmistakable advantage in performance and practicality, providing solutions to pressing engineering problems of today. With the new outlook and possibilities that ADRC represents, we further believe that control engineering may very well break the hold of classical PID and enter a new era, an era that brings back the spirit of innovations.
+
+Abstract
+The Ziegler–Nichols step response method is based on the idea of tuning controllers based on simple features of the step response. In this paper this idea is investigated from the point of view of robust loop shaping. The results are: insight into the properties of PI and PID control and simple tuning rules that give robust performance for processes with essentially monotone step responses.
+
+
