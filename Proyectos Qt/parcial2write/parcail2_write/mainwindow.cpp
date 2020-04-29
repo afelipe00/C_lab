@@ -92,7 +92,7 @@ void MainWindow::on_action_Open_file_triggered()
                                                         ,"All Files (*.*);;JPEG (*.jpg);;Text file (*.txt);;PNG (*.png);;MP3 (*.mp3)");
         if(!Filename.isEmpty()){
             QFile file(Filename);
-            QFileInfo extetion = file;
+            extetion = file;
             qDebug()<< "extencion: "<< extetion.suffix();
             if(file.open(QFile::ReadOnly)){
                 if (extetion.suffix() == "txt"){
@@ -123,6 +123,10 @@ void MainWindow::on_port_button_clicked()
         openSerialPort(puerto);
     }else{
         closeSerialPort();
+        band_r =false;
+        band_w = false;
+        num_packet_r = 0;
+        num_packet_w = 0;
     }
 }
 
@@ -130,14 +134,14 @@ void MainWindow::on_port_button_clicked()
 void MainWindow::openSerialPort(QString p)
 {
     qDebug()<<"puerto abierto";
-    disconnect(m_serial,SIGNAL(readyRead()),this, SLOT(readSerial()));
+    disconnect(m_serial,SIGNAL(readyRead()),this, SLOT(modeSerial()));
     m_serial->setPortName(p);
     m_serial->setBaudRate(QSerialPort::Baud115200);
     m_serial->setDataBits(QSerialPort::Data8);
     m_serial->setParity(QSerialPort::NoParity);
     m_serial->setStopBits(QSerialPort::OneStop);
     m_serial->setFlowControl(QSerialPort::NoFlowControl);
-    connect(m_serial,SIGNAL(readyRead()),this, SLOT(readSerial()));
+    connect(m_serial,SIGNAL(readyRead()),this, SLOT(modeSerial()));
 
     if(m_serial->open(QIODevice::ReadWrite)){
         ui->port_button->setText("Close Port");
@@ -149,38 +153,103 @@ void MainWindow::openSerialPort(QString p)
 }
 
 
-void MainWindow::readSerial(){
-     QByteArray serialData = m_serial->readAll();
-     qDebug()<<serialData.at(0);
-     if(serialData.at(0) == 'G' && serialData.at(1) == 'o'){
-         writeSerial();
-     }
+void MainWindow::modeSerial(){
+    QByteArray serialData = m_serial->readAll();
+    if(serialData.size()>1){
+        if (mode=='n'){
+            qDebug() << "sleep";
+        }else if(mode=='w'){
+            if(serialData.at(0) == 'G' && serialData.at(1) == 'o' && band_w == false){
+                 writeSerial();
+            }else {
+                serialData.clear();
+            }
+        }else if(mode == 'r'){
+            if(band_r==false){
+                readSerial(serialData);
+            }
+        }
+    }else{
+        qDebug()<<"paquete no encontrado";
+    }
 }
+
+void MainWindow::readSerial(QByteArray serialData){
+    m_serial->write("Go");
+    unsigned char checked = 0;
+    QByteArray check = 0;
+    qDebug()<<"datos recibidos"<<serialData;
+    qDebug()<<"datos recibidos"<<serialData.at(0);
+    if(serialData.size() >1){
+        if(serialData.at(0) == 0x01 && serialData.at(1) == 0x01){
+            check = serialData.mid(0,4);
+            checked = checkSum(&check);
+            qDebug()<<"byte de check:"<<checked;
+            if(checked == serialData.at(4)){
+                qDebug()<<"se recibio el dato";
+                datos.append(serialData.at(3));
+                num_packet_r++;
+                ui->progressBar->setValue(num_packet_r);
+            }else{
+                qDebug()<<"paquete erroneo";
+            }
+        }else if(serialData.at(0) == 0x07 && serialData.at(1) == 0x07){
+            mostrarDatos();
+            band_r = true;
+        }
+    }else{
+        qDebug()<< "paquete no encontrado";
+    }
+}
+
+void MainWindow::mostrarDatos(){
+    qDebug()<<datos;
+    ui->plainTextEdit->setPlainText(datos);
+}
+
 
 void MainWindow::writeSerial(){
     QByteArray data;
     data = ui->plainTextEdit->toPlainText().toUtf8();
     int size = data.size();
-    int suma = 0;
-    int inicio = 0x01;
-    int extention = (int)"txt";
-    int check = 0;
+    unsigned char Xor;
+    QByteArray packet = 0;
+    unsigned char ext = extetion.suffix().toInt();
     for (int i = 0; i < size - 1 ; i++){
-        char packet = data.at(i);
+        packet.append(0x01);
+        packet.append(0x01);
+        packet.append(ext);
+        packet.append(data.at(i));
+        Xor = checkSum(&packet);
+        packet.append(Xor);
+        packet.append(0x05);
+        packet.append(0x05);
         qDebug() << "paquete"<<packet;
         if(m_serial->isWritable()){
-            m_serial->putChar(inicio);
-            m_serial->write("txt");
-            m_serial->putChar(packet);
-            suma = suma + inicio + extention + (int)packet;
-            check = size xor suma;
-            m_serial->putChar(check);
-            num_packet ++;
-            qDebug() << "se envio packet" << num_packet;
+            m_serial->write(packet);
+            num_packet_w ++;
+            qDebug() << "se envio packet" << num_packet_w;
         }
+        packet.clear();
     }
+    m_serial->putChar(0x07);
+    m_serial->putChar(0x07);
+    band_w = true;
+    num_packet_w = 0;
 }
 
+unsigned char MainWindow::checkSum(QByteArray  *b)
+{
+    qint16 b_len = b->length();
+
+    unsigned char Xor = 0;
+
+    for ( int i = 0 ; i < b_len ; i ++ )
+    {
+       Xor = Xor ^ b->at(i);
+    }
+    return  Xor;
+}
 //metodo para cerrar el puerto
 void MainWindow::closeSerialPort(){
     if(m_serial->isOpen()){
@@ -192,5 +261,10 @@ void MainWindow::closeSerialPort(){
 
 void MainWindow::on_send_button_clicked()
 {
-    writeSerial();
+    mode = 'w';
+}
+
+void MainWindow::on_receive_button_clicked()
+{
+    mode = 'r';
 }
