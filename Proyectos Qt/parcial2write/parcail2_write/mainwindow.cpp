@@ -189,6 +189,7 @@ void MainWindow::readSerial(QByteArray serialData){
                 qDebug()<<"se recibio el dato";
                 datos.append(serialData.at(3));
                 num_packet_r++;
+                ui->progressBar->setMouseTracking(true);
                 ui->progressBar->setValue(num_packet_r);
             }else{
                 qDebug()<<"paquete erroneo";
