@@ -22,7 +22,6 @@ Widget::Widget(QWidget *parent) :
     }
     m_serial = new QSerialPort(this);
 
-
 }
 
 Widget::~Widget()

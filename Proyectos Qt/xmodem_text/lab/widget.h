@@ -26,7 +26,6 @@ private slots:
     void readSerial();
     void on_pushButton_2_clicked();
     bool send(const QString &filePath);
-
     void on_pushButton_3_clicked();
 
 private:

@@ -34,6 +34,7 @@ private:
 
     QSerialPort *m_serial = nullptr;
     void openSerialPort(QString p);
+
 };
 
 #endif // WIDGET_H
