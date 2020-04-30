@@ -80,7 +80,7 @@ public:
         progressBar->setObjectName(QString::fromUtf8("progressBar"));
         progressBar->setGeometry(QRect(370, 100, 411, 121));
         progressBar->setTabletTracking(false);
-        progressBar->setValue(24);
+        progressBar->setValue(0);
         progressBar->setInvertedAppearance(false);
         send_button = new QPushButton(centralwidget);
         send_button->setObjectName(QString::fromUtf8("send_button"));
