@@ -17,10 +17,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    tonegenerator.cpp \
+    tonegeneratordialog.cpp \
+    utils.cpp
 
 HEADERS += \
-    mainwindow.h
+    fftreal_wrapper.h \
+    mainwindow.h \
+    spectrum.h \
+    tonegenerator.h \
+    tonegeneratordialog.h \
+    utils.h
 
 FORMS += \
     mainwindow.ui
