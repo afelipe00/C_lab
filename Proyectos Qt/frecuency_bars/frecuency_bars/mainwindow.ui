@@ -17,116 +17,153 @@
    <widget class="QSplitter" name="splitter">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>340</y>
-      <width>681</width>
-      <height>201</height>
+      <x>10</x>
+      <y>290</y>
+      <width>781</width>
+      <height>221</height>
      </rect>
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
     </property>
-    <widget class="QProgressBar" name="progressBar_2">
-     <property name="value">
-      <number>24</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
-    <widget class="QProgressBar" name="progressBar">
-     <property name="value">
-      <number>24</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
-    <widget class="QProgressBar" name="progressBar_3">
-     <property name="value">
-      <number>24</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
-    <widget class="QProgressBar" name="progressBar_4">
-     <property name="value">
-      <number>24</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
-    <widget class="QProgressBar" name="progressBar_5">
-     <property name="value">
-      <number>24</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
-    <widget class="QProgressBar" name="progressBar_6">
-     <property name="value">
-      <number>24</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
-    <widget class="QProgressBar" name="progressBar_7">
-     <property name="value">
-      <number>24</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
-    <widget class="QProgressBar" name="progressBar_8">
-     <property name="value">
-      <number>24</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
-    <widget class="QProgressBar" name="progressBar_9">
-     <property name="value">
-      <number>24</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
-    <widget class="QProgressBar" name="progressBar_10">
-     <property name="value">
-      <number>24</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
-    <widget class="QProgressBar" name="progressBar_11">
-     <property name="value">
-      <number>24</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
+    <widget class="Spectrograph" name="spect_graph" native="true"/>
    </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
       <x>60</x>
-      <y>180</y>
-      <width>171</width>
-      <height>101</height>
+      <y>60</y>
+      <width>181</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
      <string>mode</string>
     </property>
+   </widget>
+   <widget class="Waveform" name="wave_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>10</y>
+      <width>481</width>
+      <height>261</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSplitter" name="splitter_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>281</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Frecuencia de muestreo:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>100 Hz</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="splitter_3">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>130</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <widget class="QCheckBox" name="checkBox">
+     <property name="text">
+      <string>Filtro Pasa-Altas</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_2">
+     <property name="text">
+      <string>Filtro Pasa-Bajas</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="splitter_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>520</y>
+      <width>751</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>1hz</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>10hz</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>100hz</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>1khz</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>10khz</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>100khz</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>1mhz</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>10mhz</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="text">
+      <string>100mhz</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="text">
+      <string>100hz</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="text">
+      <string>100hz</string>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -141,6 +178,20 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Spectrograph</class>
+   <extends>QWidget</extends>
+   <header>spectrograph.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Waveform</class>
+   <extends>QWidget</extends>
+   <header>waveform.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

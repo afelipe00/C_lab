@@ -1,0 +1,14 @@
+release/fftreal_wrapper.o
+release/ClockCycleCounter.o
+release/StopWatch.o
+release/frequencyspectrum.o
+release/main.o
+release/mainwindow.o
+release/spectrograph.o
+release/tonegenerator_dialog.o
+release/utils.o
+release/waveform.o
+release/moc_mainwindow.o
+release/moc_spectrograph.o
+release/moc_tonegenerator_dialog.o
+release/moc_waveform.o

@@ -2,6 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QAudio>
+#include <QIcon>
+
+class Spectrograph;
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,5 +24,9 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    void createUi();
+    Spectrograph*           m_spectrograph;
+
 };
+
 #endif // MAINWINDOW_H

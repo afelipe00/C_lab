@@ -48,47 +48,61 @@
 **
 ****************************************************************************/
 
-#ifndef TONEGENERATORDIALOG_H
-#define TONEGENERATORDIALOG_H
+#ifndef FREQUENCYSPECTRUM_H
+#define FREQUENCYSPECTRUM_H
 
-#include "spectrum.h"
-#include <QAudioDeviceInfo>
-#include <QDialog>
-
-QT_BEGIN_NAMESPACE
-class QCheckBox;
-class QSlider;
-class QSpinBox;
-class QGridLayout;
-QT_END_NAMESPACE
+#include <QtCore/QVector>
 
 /**
- * Dialog which controls the parameters of the tone generator.
+ * Represents a frequency spectrum as a series of elements, each of which
+ * consists of a frequency, an amplitude and a phase.
  */
-class ToneGeneratorDialog : public QDialog
-{
-    Q_OBJECT
-
+class FrequencySpectrum {
 public:
-    explicit ToneGeneratorDialog(QWidget *parent = 0);
-    ~ToneGeneratorDialog();
+    FrequencySpectrum(int numPoints = 0);
 
-    bool isFrequencySweepEnabled() const;
-    qreal frequency() const;
-    qreal amplitude() const;
+    struct Element {
+        Element()
+        :   frequency(0.0), amplitude(0.0), phase(0.0), clipped(false)
+        { }
 
-private slots:
-    void frequencySweepEnabled(bool enabled);
+        /**
+         * Frequency in Hertz
+         */
+        qreal frequency;
+
+        /**
+         * Amplitude in range [0.0, 1.0]
+         */
+        qreal amplitude;
+
+        /**
+         * Phase in range [0.0, 2*PI]
+         */
+        qreal phase;
+
+        /**
+         * Indicates whether value has been clipped during spectrum analysis
+         */
+        bool clipped;
+    };
+
+    typedef QVector<Element>::iterator iterator;
+    typedef QVector<Element>::const_iterator const_iterator;
+
+    void reset();
+
+    int count() const;
+    Element& operator[](int index);
+    const Element& operator[](int index) const;
+    iterator begin();
+    iterator end();
+    const_iterator begin() const;
+    const_iterator end() const;
 
 private:
-    QCheckBox *m_toneGeneratorSweepCheckBox;
-    bool m_frequencySweepEnabled;
-    QWidget *m_toneGeneratorControl;
-    QWidget *m_toneGeneratorFrequencyControl;
-    QSlider *m_frequencySlider;
-    QSpinBox *m_frequencySpinBox;
-    qreal m_frequency;
-    QSlider *m_amplitudeSlider;
+    QVector<Element> m_elements;
+
 };
 
-#endif // TONEGENERATORDIALOG_H
+#endif // FREQUENCYSPECTRUM_H

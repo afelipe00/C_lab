@@ -1,0 +1,14 @@
+debug/fftreal_wrapper.o
+debug/ClockCycleCounter.o
+debug/StopWatch.o
+debug/frequencyspectrum.o
+debug/main.o
+debug/mainwindow.o
+debug/spectrograph.o
+debug/tonegenerator_dialog.o
+debug/utils.o
+debug/waveform.o
+debug/moc_mainwindow.o
+debug/moc_spectrograph.o
+debug/moc_tonegenerator_dialog.o
+debug/moc_waveform.o

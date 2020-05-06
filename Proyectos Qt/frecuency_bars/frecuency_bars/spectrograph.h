@@ -48,53 +48,61 @@
 **
 ****************************************************************************/
 
-#include "spectrum.h"
-#include "utils.h"
-#include <QByteArray>
-#include <QAudioFormat>
-#include <qmath.h>
-#include <qendian.h>
+#ifndef SPECTROGRAPH_H
+#define SPECTROGRAPH_H
 
-void generateTone(const SweptTone &tone, const QAudioFormat &format, QByteArray &buffer)
+#include "frequencyspectrum.h"
+
+#include <QWidget>
+
+/**
+ * Widget which displays a spectrograph showing the frequency spectrum
+ * of the window of audio samples most recently analyzed by the Engine.
+ */
+class Spectrograph : public QWidget
 {
-    Q_ASSERT(isPCMS16LE(format));
+    Q_OBJECT
 
-    const int channelBytes = format.sampleSize() / 8;
-    const int sampleBytes = format.channelCount() * channelBytes;
-    int length = buffer.size();
-    const int numSamples = buffer.size() / sampleBytes;
+public:
+    explicit Spectrograph(QWidget *parent = 0);
+    ~Spectrograph();
 
-    Q_ASSERT(length % sampleBytes == 0);
-    Q_UNUSED(sampleBytes) // suppress warning in release builds
+    void setParams(int numBars, qreal lowFreq, qreal highFreq);
 
-    unsigned char *ptr = reinterpret_cast<unsigned char *>(buffer.data());
+    // QObject
+    void timerEvent(QTimerEvent *event) override;
 
-    qreal phase = 0.0;
+    // QWidget
+    void paintEvent(QPaintEvent *event) override;
+    void mousePressEvent(QMouseEvent *event) override;
 
-    const qreal d = 2 * M_PI / format.sampleRate();
+signals:
+    void infoMessage(const QString &message, int intervalMs);
 
-    // We can't generate a zero-frequency sine wave
-    const qreal startFreq = tone.startFreq ? tone.startFreq : 1.0;
+public slots:
+    void reset();
+    void spectrumChanged(const FrequencySpectrum &spectrum);
 
-    // Amount by which phase increases on each sample
-    qreal phaseStep = d * startFreq;
+private:
+    int barIndex(qreal frequency) const;
+    QPair<qreal, qreal> barRange(int barIndex) const;
+    void updateBars();
 
-    // Amount by which phaseStep increases on each sample
-    // If this is non-zero, the output is a frequency-swept tone
-    const qreal phaseStepStep = d * (tone.endFreq - startFreq) / numSamples;
+    void selectBar(int index);
 
-    while (length) {
-        const qreal x = tone.amplitude * qSin(phase);
-        const qint16 value = realToPcm(x);
-        for (int i=0; i<format.channelCount(); ++i) {
-            qToLittleEndian<qint16>(value, ptr);
-            ptr += channelBytes;
-            length -= channelBytes;
-        }
+private:
+    struct Bar {
+        Bar() : value(0.0), clipped(false) { }
+        qreal   value;
+        bool    clipped;
+    };
 
-        phase += phaseStep;
-        while (phase > 2 * M_PI)
-            phase -= 2 * M_PI;
-        phaseStep += phaseStepStep;
-    }
-}
+    QVector<Bar>        m_bars;
+    int                 m_barSelected;
+    int                 m_timerId;
+    qreal               m_lowFreq;
+    qreal               m_highFreq;
+    FrequencySpectrum   m_spectrum;
+};
+
+#endif // SPECTROGRAPH_H

@@ -11,13 +11,16 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
-#include <QtWidgets/QProgressBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSplitter>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
+#include "spectrograph.h"
+#include "waveform.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -26,18 +29,27 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QSplitter *splitter;
-    QProgressBar *progressBar_2;
-    QProgressBar *progressBar;
-    QProgressBar *progressBar_3;
-    QProgressBar *progressBar_4;
-    QProgressBar *progressBar_5;
-    QProgressBar *progressBar_6;
-    QProgressBar *progressBar_7;
-    QProgressBar *progressBar_8;
-    QProgressBar *progressBar_9;
-    QProgressBar *progressBar_10;
-    QProgressBar *progressBar_11;
+    Spectrograph *spect_graph;
     QPushButton *pushButton;
+    Waveform *wave_widget;
+    QSplitter *splitter_2;
+    QLabel *label;
+    QLabel *label_2;
+    QSplitter *splitter_3;
+    QCheckBox *checkBox;
+    QCheckBox *checkBox_2;
+    QSplitter *splitter_4;
+    QLabel *label_3;
+    QLabel *label_4;
+    QLabel *label_5;
+    QLabel *label_6;
+    QLabel *label_7;
+    QLabel *label_8;
+    QLabel *label_9;
+    QLabel *label_10;
+    QLabel *label_11;
+    QLabel *label_12;
+    QLabel *label_13;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -50,66 +62,74 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         splitter = new QSplitter(centralwidget);
         splitter->setObjectName(QString::fromUtf8("splitter"));
-        splitter->setGeometry(QRect(60, 340, 681, 201));
+        splitter->setGeometry(QRect(10, 290, 781, 221));
         splitter->setOrientation(Qt::Horizontal);
-        progressBar_2 = new QProgressBar(splitter);
-        progressBar_2->setObjectName(QString::fromUtf8("progressBar_2"));
-        progressBar_2->setValue(24);
-        progressBar_2->setOrientation(Qt::Vertical);
-        splitter->addWidget(progressBar_2);
-        progressBar = new QProgressBar(splitter);
-        progressBar->setObjectName(QString::fromUtf8("progressBar"));
-        progressBar->setValue(24);
-        progressBar->setOrientation(Qt::Vertical);
-        splitter->addWidget(progressBar);
-        progressBar_3 = new QProgressBar(splitter);
-        progressBar_3->setObjectName(QString::fromUtf8("progressBar_3"));
-        progressBar_3->setValue(24);
-        progressBar_3->setOrientation(Qt::Vertical);
-        splitter->addWidget(progressBar_3);
-        progressBar_4 = new QProgressBar(splitter);
-        progressBar_4->setObjectName(QString::fromUtf8("progressBar_4"));
-        progressBar_4->setValue(24);
-        progressBar_4->setOrientation(Qt::Vertical);
-        splitter->addWidget(progressBar_4);
-        progressBar_5 = new QProgressBar(splitter);
-        progressBar_5->setObjectName(QString::fromUtf8("progressBar_5"));
-        progressBar_5->setValue(24);
-        progressBar_5->setOrientation(Qt::Vertical);
-        splitter->addWidget(progressBar_5);
-        progressBar_6 = new QProgressBar(splitter);
-        progressBar_6->setObjectName(QString::fromUtf8("progressBar_6"));
-        progressBar_6->setValue(24);
-        progressBar_6->setOrientation(Qt::Vertical);
-        splitter->addWidget(progressBar_6);
-        progressBar_7 = new QProgressBar(splitter);
-        progressBar_7->setObjectName(QString::fromUtf8("progressBar_7"));
-        progressBar_7->setValue(24);
-        progressBar_7->setOrientation(Qt::Vertical);
-        splitter->addWidget(progressBar_7);
-        progressBar_8 = new QProgressBar(splitter);
-        progressBar_8->setObjectName(QString::fromUtf8("progressBar_8"));
-        progressBar_8->setValue(24);
-        progressBar_8->setOrientation(Qt::Vertical);
-        splitter->addWidget(progressBar_8);
-        progressBar_9 = new QProgressBar(splitter);
-        progressBar_9->setObjectName(QString::fromUtf8("progressBar_9"));
-        progressBar_9->setValue(24);
-        progressBar_9->setOrientation(Qt::Vertical);
-        splitter->addWidget(progressBar_9);
-        progressBar_10 = new QProgressBar(splitter);
-        progressBar_10->setObjectName(QString::fromUtf8("progressBar_10"));
-        progressBar_10->setValue(24);
-        progressBar_10->setOrientation(Qt::Vertical);
-        splitter->addWidget(progressBar_10);
-        progressBar_11 = new QProgressBar(splitter);
-        progressBar_11->setObjectName(QString::fromUtf8("progressBar_11"));
-        progressBar_11->setValue(24);
-        progressBar_11->setOrientation(Qt::Vertical);
-        splitter->addWidget(progressBar_11);
+        spect_graph = new Spectrograph(splitter);
+        spect_graph->setObjectName(QString::fromUtf8("spect_graph"));
+        splitter->addWidget(spect_graph);
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(60, 180, 171, 101));
+        pushButton->setGeometry(QRect(60, 60, 181, 41));
+        wave_widget = new Waveform(centralwidget);
+        wave_widget->setObjectName(QString::fromUtf8("wave_widget"));
+        wave_widget->setGeometry(QRect(310, 10, 481, 261));
+        splitter_2 = new QSplitter(centralwidget);
+        splitter_2->setObjectName(QString::fromUtf8("splitter_2"));
+        splitter_2->setGeometry(QRect(20, 30, 281, 21));
+        splitter_2->setOrientation(Qt::Horizontal);
+        label = new QLabel(splitter_2);
+        label->setObjectName(QString::fromUtf8("label"));
+        splitter_2->addWidget(label);
+        label_2 = new QLabel(splitter_2);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        splitter_2->addWidget(label_2);
+        splitter_3 = new QSplitter(centralwidget);
+        splitter_3->setObjectName(QString::fromUtf8("splitter_3"));
+        splitter_3->setGeometry(QRect(60, 130, 161, 61));
+        splitter_3->setOrientation(Qt::Vertical);
+        checkBox = new QCheckBox(splitter_3);
+        checkBox->setObjectName(QString::fromUtf8("checkBox"));
+        splitter_3->addWidget(checkBox);
+        checkBox_2 = new QCheckBox(splitter_3);
+        checkBox_2->setObjectName(QString::fromUtf8("checkBox_2"));
+        splitter_3->addWidget(checkBox_2);
+        splitter_4 = new QSplitter(centralwidget);
+        splitter_4->setObjectName(QString::fromUtf8("splitter_4"));
+        splitter_4->setGeometry(QRect(20, 520, 751, 16));
+        splitter_4->setOrientation(Qt::Horizontal);
+        label_3 = new QLabel(splitter_4);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        splitter_4->addWidget(label_3);
+        label_4 = new QLabel(splitter_4);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        splitter_4->addWidget(label_4);
+        label_5 = new QLabel(splitter_4);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+        splitter_4->addWidget(label_5);
+        label_6 = new QLabel(splitter_4);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+        splitter_4->addWidget(label_6);
+        label_7 = new QLabel(splitter_4);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+        splitter_4->addWidget(label_7);
+        label_8 = new QLabel(splitter_4);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+        splitter_4->addWidget(label_8);
+        label_9 = new QLabel(splitter_4);
+        label_9->setObjectName(QString::fromUtf8("label_9"));
+        splitter_4->addWidget(label_9);
+        label_10 = new QLabel(splitter_4);
+        label_10->setObjectName(QString::fromUtf8("label_10"));
+        splitter_4->addWidget(label_10);
+        label_11 = new QLabel(splitter_4);
+        label_11->setObjectName(QString::fromUtf8("label_11"));
+        splitter_4->addWidget(label_11);
+        label_12 = new QLabel(splitter_4);
+        label_12->setObjectName(QString::fromUtf8("label_12"));
+        splitter_4->addWidget(label_12);
+        label_13 = new QLabel(splitter_4);
+        label_13->setObjectName(QString::fromUtf8("label_13"));
+        splitter_4->addWidget(label_13);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -128,6 +148,21 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "mode", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "Frecuencia de muestreo:", nullptr));
+        label_2->setText(QCoreApplication::translate("MainWindow", "100 Hz", nullptr));
+        checkBox->setText(QCoreApplication::translate("MainWindow", "Filtro Pasa-Altas", nullptr));
+        checkBox_2->setText(QCoreApplication::translate("MainWindow", "Filtro Pasa-Bajas", nullptr));
+        label_3->setText(QCoreApplication::translate("MainWindow", "1hz", nullptr));
+        label_4->setText(QCoreApplication::translate("MainWindow", "10hz", nullptr));
+        label_5->setText(QCoreApplication::translate("MainWindow", "100hz", nullptr));
+        label_6->setText(QCoreApplication::translate("MainWindow", "1khz", nullptr));
+        label_7->setText(QCoreApplication::translate("MainWindow", "10khz", nullptr));
+        label_8->setText(QCoreApplication::translate("MainWindow", "100khz", nullptr));
+        label_9->setText(QCoreApplication::translate("MainWindow", "1mhz", nullptr));
+        label_10->setText(QCoreApplication::translate("MainWindow", "10mhz", nullptr));
+        label_11->setText(QCoreApplication::translate("MainWindow", "100mhz", nullptr));
+        label_12->setText(QCoreApplication::translate("MainWindow", "100hz", nullptr));
+        label_13->setText(QCoreApplication::translate("MainWindow", "100hz", nullptr));
     } // retranslateUi
 
 };

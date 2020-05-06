@@ -48,21 +48,52 @@
 **
 ****************************************************************************/
 
-#ifndef TONEGENERATOR_H
-#define TONEGENERATOR_H
+#include "frequencyspectrum.h"
 
-#include <qglobal.h>
-#include "spectrum.h"
+FrequencySpectrum::FrequencySpectrum(int numPoints)
+    :   m_elements(numPoints)
+{
 
-QT_BEGIN_NAMESPACE
-class QAudioFormat;
-class QByteArray;
-QT_END_NAMESPACE
+}
 
-/**
- * Generate a sine wave
- */
-void generateTone(const SweptTone &tone, const QAudioFormat &format, QByteArray &buffer);
+void FrequencySpectrum::reset()
+{
+    iterator i = begin();
+    for ( ; i != end(); ++i)
+        *i = Element();
+}
 
-#endif // TONEGENERATOR_H
+int FrequencySpectrum::count() const
+{
+    return m_elements.count();
+}
 
+FrequencySpectrum::Element &FrequencySpectrum::operator[](int index)
+{
+    return m_elements[index];
+}
+
+const FrequencySpectrum::Element &FrequencySpectrum::operator[](int index) const
+{
+    return m_elements[index];
+}
+
+FrequencySpectrum::iterator FrequencySpectrum::begin()
+{
+    return m_elements.begin();
+}
+
+FrequencySpectrum::iterator FrequencySpectrum::end()
+{
+    return m_elements.end();
+}
+
+FrequencySpectrum::const_iterator FrequencySpectrum::begin() const
+{
+    return m_elements.begin();
+}
+
+FrequencySpectrum::const_iterator FrequencySpectrum::end() const
+{
+    return m_elements.end();
+}
