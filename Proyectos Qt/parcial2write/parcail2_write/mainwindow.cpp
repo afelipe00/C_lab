@@ -202,12 +202,6 @@ void MainWindow::readSerial(QByteArray serialData){
     }
 }
 
-void MainWindow::mostrarDatos(){
-    qDebug()<<datos;
-    ui->plainTextEdit->setPlainText(datos);
-}
-
-
 void MainWindow::writeSerial(){
     QByteArray data;
     data = ui->plainTextEdit->toPlainText().toUtf8();
@@ -257,6 +251,11 @@ void MainWindow::closeSerialPort(){
         ui->port_button->setText("Open Port");
         ui->port_box->setDisabled(false);
     }
+}
+
+void MainWindow::mostrarDatos(){
+    qDebug()<<datos;
+    ui->plainTextEdit->setPlainText(datos);
 }
 
 void MainWindow::on_send_button_clicked()
